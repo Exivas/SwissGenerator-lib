@@ -1,4 +1,4 @@
-// rangePass.js
+
 export function rangePass(min, max) {
     const characters = "abcdefghijklmnopqrstuvwxyz1234567890ABCDFGHIJQLMNOPQRSTUVWXYZ";
     let password = '';

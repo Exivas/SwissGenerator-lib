@@ -1,4 +1,4 @@
-// passCombination.js
+
 export function passCombination(value1, value2) {
     const characters = value1 + value2;
     let password = '';

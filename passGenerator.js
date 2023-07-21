@@ -1,4 +1,4 @@
-// passGenerator.js
+
 import { addCharacters } from './add.js';
 import { rangePass } from './rangePass.js';
 import { passCombination } from './passCombination.js';
