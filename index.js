@@ -1,10 +1,10 @@
 
-import PassGenerator from './passGenerator.js';
+import {PassGenerator} from './swissGenerator.js';
 
 const generator = new PassGenerator();
 console.log(generator.password); 
 
-generator.addCharacters("ABC123");
+generator.oneOnlyCharacter("ABC123");
 console.log(generator.password); 
 
 generator.generateRange(8, 12);

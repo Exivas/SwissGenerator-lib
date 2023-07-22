@@ -1,4 +1,4 @@
-export function addCharacters(password, characters) {
+export function oneOnlyCharacter(password, characters) {
     return password + getRandomCharacter(characters);
   }
   
