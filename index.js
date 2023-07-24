@@ -1,10 +1,13 @@
 
-import {PassGenerator,nameGenerator} from './swissGenerator.js';
+import {PassGenerator,nameGenerator, otherTools} from './swissGenerator.js';
 
 const generator = new PassGenerator();
 const nick= new nameGenerator();
-console.log(generator.password); 
+const tools=new otherTools();
 
+
+console.log(generator.password); 
+//*[]complete the generator class with all the methods and properties
 generator.onlyCharacter("ABC123");
 console.log(generator.password); 
 
@@ -14,11 +17,19 @@ console.log(generator.password);
 generator.generateCombination("alaju", "akbar");
 console.log(generator.password); 
 
-
 generator.generateExact(10)
 console.log(generator.password);
 
+//*[]complete the generator class with all the methods and properties
 nick.nickNameG(3,10)
 console.log(nick.name)
+
+nick.NickNameCombination("alaju", "akbar")
+console.log(nick.name)
+
+//*[]complete the generator class with all the methods and properties
+tools.TokensG(35)
+console.log(tools.tool)
+
 
 

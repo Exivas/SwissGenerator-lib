@@ -1,14 +1,16 @@
-//password generator imports
+//!password generator imports
 import { onlyCharacter} from './PassGenerator/onlyCharacter.js';
 import { rangePass } from './PassGenerator/rangePass.js';
 import { passCombination } from './PassGenerator/passCombination.js';
 import { exactPassword } from './PassGenerator/exactPassword.js';
 
 
-//nickname generator imports
+//!nickname generator imports
 import { nickNameG } from './NicknameGenerator/NicknameG.js'; 
-import { savedNickGenerated } from './NicknameGenerator/nickGenerated.js';
+import { NickNameCombination } from './NicknameGenerator/nickNameCombination.js';
 
+//!othertools imports
+import { TokensG } from './Others tools/TokensGenerator.js';
 
 
 //password generator functions
@@ -54,13 +56,23 @@ export class nameGenerator{
   nickNameG(min,max){
     this.name = nickNameG(min,max);
   }
-//no terminado de implementar
-  savedNickGenerated(url,nick,index){
-
-    this.name = savedNickGenerated(url,nick,index);
-
-  } 
-  
+  NickNameCombination(value1,value2){
+    this.name = NickNameCombination(value1,value2);
+  }
+}
+export class otherTools{
+  constructor(){
+    this.tool = "";
+  }
+  set tool(value){
+    this._tool = value;
+  }
+  get tool(){
+    return this._tool;
+  }
+  TokensG(long,boolean){
+    this.tool = TokensG(long);
+  }
 
 }
 
