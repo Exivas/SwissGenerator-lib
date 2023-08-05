@@ -21,15 +21,13 @@ generator.generateExact(10)
 console.log(generator.password);
 
 //*[]complete the generator class with all the methods and properties
-nick.nickNameG(3,10)
+nick.nickNameG(3,4)
 console.log(nick.name)
 
 nick.NickNameCombination("alaju", "akbar")
 console.log(nick.name)
 
 //*[]complete the generator class with all the methods and properties
-tools.TokensG(35)
-console.log(tools.tool)
 
 
 

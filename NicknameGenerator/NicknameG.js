@@ -12,7 +12,7 @@ export function nickNameG(min,max){
         }
     
     }
-    return nickName;
+    return nickName.charAt(0).toUpperCase()+nickName.slice(1);
     
 
 }

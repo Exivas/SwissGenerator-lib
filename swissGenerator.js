@@ -10,7 +10,7 @@ import { nickNameG } from './NicknameGenerator/NicknameG.js';
 import { NickNameCombination } from './NicknameGenerator/nickNameCombination.js';
 
 //!othertools imports
-import { TokensG } from './Others tools/TokensGenerator.js';
+
 
 
 //password generator functions
@@ -70,10 +70,6 @@ export class otherTools{
   get tool(){
     return this._tool;
   }
-  TokensG(long,boolean){
-    this.tool = TokensG(long);
-  }
-
 }
 
 
